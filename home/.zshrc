@@ -14,27 +14,11 @@ zinit ice depth=1
 zinit light romkatv/powerlevel10k
 
 zinit ice as"command" from"gh-r" \
-          atclone"echo 'Installing Neovim...'; \
-          wget https://github.com/neovim/neovim/releases/download/v0.10.3/nvim.appimage -O nvim.appimage && \
-          chmod +x nvim.appimage && \
-          sudo mv nvim.appimage /usr/bin/nvim && \
-          echo 'Neovim installed successfully!' || \
-          echo 'Failed to install Neovim!'"
-zinit light neovim/neovim
-
-zinit ice as"command" from"gh-r" \
           atclone"echo 'Installing fzf...'; \
           sudo mv fzf /usr/bin && \
           echo 'fzf installed successfully!' || \
           echo 'Failed to install fzf!'"
 zinit light junegunn/fzf
-
-zinit ice as"command" from"gh-r" \
-          atclone"echo 'Installing exa...'; \
-          sudo mv bin/exa /usr/bin && \
-          echo 'exa installed successfully!' || \
-          echo 'Failed to install exa!'"
-zinit light ogham/exa
 
 zinit ice as"command" from"gh-r" \
           atclone"echo 'Installing bat...'; \
@@ -149,33 +133,3 @@ source ~/.local/share/zinit/plugins/hlissner---zsh-autopair/autopair.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-lazy_load_nvm() {
-  unset -f npm node nvm 2>/dev/null
-  echo "Lazy loading nvm..."
-  export NVM_DIR="$HOME/.nvm"
-  [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
-  [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
-  echo "nvm lazy loaded."
-}
-
-npm() {
- lazy_load_nvm
- npm $@
-}
-
-node() {
-  lazy_load_nvm
-  node $@
-}
-
-nvm() {
-  lazy_load_nvm
-  nvm $@
-}
-
-# zprof
