@@ -49,6 +49,13 @@ zinit ice as"command" from"gh-r" \
 zinit light jesseduffield/lazygit
 
 zinit ice as"command" from"gh-r" \
+          atclone"echo 'Installing lazydocker...'; \
+          sudo mv lazydocker /usr/bin && \
+          echo 'lazydocker installed successfully!' || \
+          echo 'Failed to install lazydocker!'"
+zinit light jesseduffield/lazydocker
+
+zinit ice as"command" from"gh-r" \
           atclone"echo 'Installing delta...'; \
           sudo mv delta*/delta /usr/bin && \
           echo 'delta installed successfully!' || \
@@ -88,9 +95,6 @@ zinit light hlissner/zsh-autopair
 zinit ice lucid wait"0a"
 zinit light Aloxaf/fzf-tab
 
-zinit ice lucid wait"2"
-zinit light wfxr/forgit
-
 zinit for \
     atload"zicompinit; zicdreplay" \
     blockf \
@@ -128,7 +132,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-[ -f $HOME/.local/share/zinit/plugins/wfxr---forgit/forgit.plugin.zsh ] && source $HOME/.local/share/zinit/plugins/wfxr---forgit/forgit.plugin.zsh
 source ~/.local/share/zinit/plugins/hlissner---zsh-autopair/autopair.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
