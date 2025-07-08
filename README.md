@@ -190,6 +190,14 @@ Nicer disk usage.
 
 ## Installation
 
+```bash
+git clone https://github.com/NicholasGoh/dotfiles-public && \
+  cd dotfiles-public/auto && \
+  ./install.sh && \
+  stow ../home -t ~ && \
+  stow ../.config -t ~/.config
+```
+
 ## Inspirations for this repository
 
 - https://github.com/ibraheemdev/modern-unix
