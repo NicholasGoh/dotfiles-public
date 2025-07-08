@@ -1,5 +1,6 @@
 autojump
 bc
+duf
 eza
 libbz2-dev
 libfuse2
@@ -8,6 +9,7 @@ libncurses-dev
 libx11-dev
 libxtst-dev
 lzma
+ncdu
 neovim
 npm
 python3-attr
