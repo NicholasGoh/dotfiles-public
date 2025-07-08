@@ -17,7 +17,6 @@ python3-docopt
 python3-pil
 python3-xlib
 ranger
-ripgrep
 stow
 tmux
 unzip
