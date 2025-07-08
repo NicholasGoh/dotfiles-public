@@ -169,7 +169,7 @@ Nicer disk usage.
 
 </details>
 
-### Neovim Plugins
+### Neovim Distro
 
 [![LazyVim/LazyVim](https://img.shields.io/github/stars/LazyVim/LazyVim?label=LazyVim%2FLazyVim)](https://github.com/LazyVim/LazyVim)
 
@@ -181,12 +181,23 @@ Nicer disk usage.
 
 </details>
 
+#### Features
+
+<details>
+  <summary>Native plugin manager</summary>
+
+![preview](https://user-images.githubusercontent.com/292349/208301737-68fb279c-ba70-43ef-a369-8c3e8367d6b1.png)
+
+</details>
+
 <details>
   <summary>Interactive keymap cheatsheet</summary>
 
 ![preview](https://user-images.githubusercontent.com/292349/211862473-1ff5ee7a-3bb9-4782-a9f6-014f0e5d4474.png)
 
 </details>
+
+Many more features in [LazyVim docs](https://www.lazyvim.org/)
 
 ## Installation
 
