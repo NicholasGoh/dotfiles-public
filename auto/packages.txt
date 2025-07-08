@@ -1,16 +1,15 @@
 autojump
-gnome-tweaks
-htop
+bc
+eza
 libbz2-dev
+libfuse2
 liblzma-dev
 libncurses-dev
 libx11-dev
 libxtst-dev
 lzma
-mlocate
 neovim
 npm
-oneko
 python3-attr
 python3-docopt
 python3-pil
@@ -19,5 +18,7 @@ ranger
 ripgrep
 stow
 tmux
+unzip
+wget
 xclip
 zsh
