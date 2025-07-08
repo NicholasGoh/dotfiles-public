@@ -17,7 +17,7 @@ RUN mkdir -p ~/.config && \
 ENV POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 ENV TERM=xterm
 # cache installation of zsh plugins
-RUN zsh -ic "exit"
+RUN zsh -ic "exit" && ./auto/configure-git-delta.sh
 # cache installation of nvim plugins
 RUN nvim --headless +qa
 # sample git repo for git related plugins
