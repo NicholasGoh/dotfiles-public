@@ -49,6 +49,13 @@ zinit ice as"command" from"gh-r" \
 zinit light jesseduffield/lazygit
 
 zinit ice as"command" from"gh-r" \
+          atclone"echo 'Installing lazydocker...'; \
+          sudo mv lazydocker /usr/bin && \
+          echo 'lazydocker installed successfully!' || \
+          echo 'Failed to install lazydocker!'"
+zinit light jesseduffield/lazydocker
+
+zinit ice as"command" from"gh-r" \
           atclone"echo 'Installing delta...'; \
           sudo mv delta*/delta /usr/bin && \
           echo 'delta installed successfully!' || \
