@@ -71,18 +71,6 @@ zinit ice as"command" from"gh-r" ver"v1.3.4" \
           echo 'Failed to install choose!'"
 zinit light theryangeary/choose
 
-zinit ice as"command" from"gh" \
-    atclone"echo 'Downloading and building tig...'; \
-    wget https://github.com/jonas/tig/releases/download/tig-2.5.12/tig-2.5.12.tar.gz && \
-    tar -xzf tig-2.5.12.tar.gz && \
-    cd tig-2.5.12 && \
-    make && \
-    sudo make install && \
-    echo 'tig installed successfully!' || \
-    echo 'Failed to install tig!'" \
-    atpull"%atclone"
-zinit light jonas/tig
-
 zinit ice lucid wait'0b'
 zinit light joshskidmore/zsh-fzf-history-search
 
