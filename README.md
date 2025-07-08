@@ -100,6 +100,9 @@ docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock gohn0004/dotfil
 
 ![preview](https://github.com/jesseduffield/lazygit/raw/assets/demo/commit_and_push-compressed.gif)
 
+Commitizen integration:
+![preview](./assets/commitizen.gif)
+
 </details>
 
 [![jesseduffield/lazydocker](https://img.shields.io/github/stars/jesseduffield/lazydocker?label=jesseduffield%2Flazydocker)](https://github.com/jesseduffield/lazydocker)
@@ -187,6 +190,16 @@ Nicer disk usage.
   <summary>Native plugin manager</summary>
 
 ![preview](https://user-images.githubusercontent.com/292349/208301737-68fb279c-ba70-43ef-a369-8c3e8367d6b1.png)
+
+</details>
+
+<details>
+  <summary>Fuzzy search iteratively</summary>
+
+1. Fuzzy search `run`, then fuzzy search the results for `dockerfile`
+1. Fuzzy search `run`, then fuzzy search the results for files: `dockerfile`
+
+![preview](./assets/fuzzy-search.gif)
 
 </details>
 
