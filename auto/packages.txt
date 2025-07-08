@@ -19,7 +19,6 @@ python3-xlib
 ranger
 ripgrep
 stow
-tig
 tmux
 unzip
 wget
