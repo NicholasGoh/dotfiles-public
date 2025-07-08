@@ -12,4 +12,10 @@ docker pull gohn0004/dotfiles
 docker run --rm -it gohn0004/dotfiles
 ```
 
+To use with `lazydocker`:
+
+```bash
+docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock gohn0004/dotfiles
+```
+
 ## Overview of features
