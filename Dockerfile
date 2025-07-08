@@ -20,4 +20,7 @@ ENV TERM=xterm
 RUN zsh -ic "exit"
 # cache installation of nvim plugins
 RUN nvim --headless +qa
+# sample git repo for git related plugins
+RUN git clone https://github.com/NicholasGoh/dotfiles-public
+WORKDIR /app/dotfiles-public
 ENTRYPOINT ["zsh"]
