@@ -88,9 +88,6 @@ zinit light hlissner/zsh-autopair
 zinit ice lucid wait"0a"
 zinit light Aloxaf/fzf-tab
 
-zinit ice lucid wait"2"
-zinit light wfxr/forgit
-
 zinit for \
     atload"zicompinit; zicdreplay" \
     blockf \
@@ -128,7 +125,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-[ -f $HOME/.local/share/zinit/plugins/wfxr---forgit/forgit.plugin.zsh ] && source $HOME/.local/share/zinit/plugins/wfxr---forgit/forgit.plugin.zsh
 source ~/.local/share/zinit/plugins/hlissner---zsh-autopair/autopair.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
