@@ -1,6 +1,6 @@
 # dotfiles-public
 
-Batteries-included, quality-of-life dotfiles. Try them out in a Dockerized environment; if you like it, follow the #install steps. All configurations use the native repositories' sensible defaults, but you can easily customize them to your liking.
+Batteries-included, quality-of-life dotfiles. Try them out in a Dockerized environment; if you like it, follow the [installation](#installation) steps. All configurations use the native repositories' sensible defaults, but you can easily customize them to your liking.
 
 ## Prebuilt Image on DockerHub
 
@@ -10,6 +10,12 @@ docker pull gohn0004/dotfiles
 
 ```bash
 docker run --rm -it gohn0004/dotfiles
+```
+
+Or try with a directory of your choice:
+
+```bash
+docker run --rm -it -v ./:/app -w /app gohn0004/dotfiles
 ```
 
 To use with `lazydocker`:
@@ -135,4 +141,64 @@ docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock gohn0004/dotfil
 
 A simple plugin that auto-closes, deletes and skips over matching delimiters in zsh intelligently. Hopefully.
 
+### Other CLI tools
+
+[![muesli/duf](https://img.shields.io/github/stars/muesli/duf?label=muesli%2Fduf)](https://github.com/muesli/duf)
+
+<details>
+  <summary>Disk Usage/Free Utility</summary>
+
+![preview](https://github.com/muesli/duf/raw/master/duf.png)
+
+</details>
+
+[![wting/autojump](https://img.shields.io/github/stars/wting/autojump?label=wting%2Fautojump)](https://github.com/wting/autojump)
+
+autojump is a faster way to navigate your filesystem. It works by maintaining a database of the directories you use the most from the command line.
+
+[![rofl0r/ncdu](https://img.shields.io/github/stars/rofl0r/ncdu?label=rofl0r%2Fncdu)](https://github.com/rofl0r/ncdu)
+
+Nicer disk usage.
+
+[![ranger/ranger](https://img.shields.io/github/stars/ranger/ranger?label=ranger%2Franger)](https://github.com/ranger/ranger)
+
+<details>
+  <summary>Console file manager</summary>
+
+![preview](https://raw.githubusercontent.com/ranger/ranger-assets/master/screenshots/twopane.png)
+
+</details>
+
 ### Neovim Plugins
+
+[![LazyVim/LazyVim](https://img.shields.io/github/stars/LazyVim/LazyVim?label=LazyVim%2FLazyVim)](https://github.com/LazyVim/LazyVim)
+
+<details>
+  <summary>Neovim distro (batteries batteries-included)</summary>
+
+![image](https://user-images.githubusercontent.com/292349/211285846-0b7bb3bf-0462-4029-b64c-4ee1d037fc1c.png)
+![image](https://user-images.githubusercontent.com/292349/213447056-92290767-ea16-430c-8727-ce994c93e9cc.png)
+
+</details>
+
+<details>
+  <summary>Interactive keymap cheatsheet</summary>
+
+![preview](https://user-images.githubusercontent.com/292349/211862473-1ff5ee7a-3bb9-4782-a9f6-014f0e5d4474.png)
+
+</details>
+
+## Installation
+
+```bash
+git clone https://github.com/NicholasGoh/dotfiles-public && \
+  cd dotfiles-public/auto && \
+  ./install.sh && \
+  stow ../home -t ~ && \
+  stow ../.config -t ~/.config
+```
+
+## Inspirations for this repository
+
+- https://github.com/ibraheemdev/modern-unix
+- https://github.com/tainvecs/dotfiles
