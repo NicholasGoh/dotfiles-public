@@ -222,6 +222,17 @@ git clone https://github.com/NicholasGoh/dotfiles-public && \
   stow ../.config -t ~/.config
 ```
 
+## Disclaimer
+
+`lazydocker` is not meant to view logs of containers running `lazydocker`. Thus running `lazydocker` in `gohn0004/dotfiles` will show weird logs, as container is viewing logs of itself running `lazydocker`, but otherwise correct functionality.
+
+<details>
+  <summary>Click to expand</summary>
+
+![preview](./assets/lazydocker-disclaimer.png)
+
+</details>
+
 ## Inspirations for this repository
 
 - https://github.com/ibraheemdev/modern-unix
