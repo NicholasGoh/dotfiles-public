@@ -219,7 +219,8 @@ git clone https://github.com/NicholasGoh/dotfiles-public && \
   cd dotfiles-public/auto && \
   ./install.sh && \
   stow ../home -t ~ && \
-  stow ../.config -t ~/.config
+  stow ../.config -t ~/.config && \
+  ./configure-git-delta.sh
 ```
 
 ## Disclaimer
